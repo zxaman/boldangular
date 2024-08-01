@@ -1,0 +1,46 @@
+.countdown-timer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8374f;
+    color: #ffffff;
+    padding: 10px 20px;
+    // border-radius: 5px;
+    margin: 20px 0;
+    margin-bottom: 0px;
+    margin-top: -4.5px;
+  
+    .prime-time-deals {
+      font-size: 20px;
+      font-weight: bold;
+      margin-left: -150px;
+    }
+  
+    .countdown {
+      display: flex;
+      align-items: center;
+      margin-left: 150px;
+    //   margin-right: 50px;
+  
+      span {
+        color: #ffd876;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0 5px;
+      }
+    }
+  
+    .view-all-button {
+      button {
+        background-color: #f1f5f9;
+        color: #000000;
+        font-weight: bold;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 150px;
+      }
+    }
+  }
+  

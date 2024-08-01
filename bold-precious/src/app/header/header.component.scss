@@ -1,0 +1,261 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 250px;
+  background-color: #f2f2f2;
+  color: rgb(10, 9, 9);
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a1a;
+  color: white;
+  width: 100%;
+  padding: 0;
+  margin-top: -10px;
+
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+
+    .menu-button {
+      display: none;
+    }
+
+    .logo {
+      button {
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        margin-bottom: -20px;
+
+        img {
+          width: 60px;
+          height: auto;
+          margin-top: -10px;
+        }
+      }
+    }
+
+    .metal-prices {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -500px;
+      margin-bottom: -20px;
+
+      .metal-info {
+        text-align: center;
+        margin-right: 10px;
+        background-color: #1a1c1f;
+        padding: 5px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+
+        .metal-name {
+          display: flex;
+          font-size: smaller;
+          align-items: flex-start;
+        }
+
+        .price-stock {
+          display: flex;
+          align-items: center;
+
+          .price {
+            font-weight: bold;
+            margin-right: 5px;
+            font-size: small;
+          }
+
+          .stock-rate {
+            display: flex;
+            align-items: center;
+            font-size: small;
+
+            .arrow {
+              color: green;
+              margin-right: 5px;
+              font-size: small;
+            }
+          }
+        }
+      }
+    }
+
+    .login-section {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+      font-size: medium;
+      margin-bottom: -20px;
+
+      button {
+        margin-left: 10px;
+        color: white;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        mat-icon {
+          margin-right: 5px;
+        }
+      }
+
+      .support-call {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 10px;
+        background-color: #333;
+        padding: 5px;
+        border-radius: 4px;
+
+        .support {
+          display: flex;
+          align-items: center;
+          margin-bottom: 2px;
+
+          mat-icon {
+            margin-right: 5px;
+          }
+        }
+
+        .call {
+          display: flex;
+          align-items: center;
+
+          mat-icon {
+            margin-right: 5px;
+          }
+
+          .phone-number {
+            font-size: medium;
+          }
+        }
+      }
+    }
+  }
+
+  .header-row2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 5px 20px;
+    height: 50px;
+
+    .shop-button {
+      button {
+        background-color: #37ffc0;
+        color: #000000;
+        font-weight: bold;
+        margin-left: 90px;
+        font-size: 15px;
+      }
+    }
+
+    .search-bar {
+      input {
+        width: 500px;
+        padding: 5px;
+        border: none;
+        border-radius: 4px;
+        margin-right: -100px;
+        margin-left: -40px;
+      }
+    }
+
+    .shipping-info {
+      h2 {
+        margin: 0;
+        color: #37ffc0;
+        text-align: center;
+        font-size: 16px;
+        font-style: italic;
+      }
+      h3 {
+        margin: 0;
+        color: #37ffc0;
+        text-align: center;
+        font-size: 15px;
+        margin-top: -30px;
+        font-style: italic;
+      }
+    }
+  }
+
+  .header-row3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1c1f;
+    padding: 5px 0;
+
+    button {
+      color: white;
+
+      &.sell-to-us {
+        background-color: #ff9800;
+        color: white;
+        margin-left: 4px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    .header-row {
+      .menu-button {
+        display: inline-block;
+      }
+
+      .logo,
+      .metal-prices,
+      .login-section {
+        display: none;
+      }
+    }
+
+    .header-row2 {
+      .shop-button {
+        button {
+          margin-left: 10px;
+        }
+      }
+
+      .search-bar {
+        input {
+          width: auto;
+          margin-right: 0;
+          margin-left: 0;
+        }
+      }
+
+      .shipping-info {
+        h2,
+        h3 {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .header-row3 {
+      button {
+        font-size: 12px;
+      }
+    }
+  }
+}

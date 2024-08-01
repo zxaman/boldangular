@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="left-panel">
+      <h3>Shop Confidently</h3>
+      <hr>
+      <ul>
+        <li>Shipping & Insurance</li>
+        <li>Payment Options</li>
+        <li>FAQ</li>
+        <li>Reviews</li>
+        <li>Privacy Policy</li>
+        <li>Terms & Conditions</li>
+        <li>Return Policy</li>
+      </ul>
+      <div class="contact">
+        <h4>Have a Question?</h4>
+        <p><strong>1(866) 454-BOLD</strong></p>
+        <p>support_boldpreciousmetals.com</p>
+      </div>
+    </div>
+  
+    <div class="right-container">
+      <div class="right-panel">
+        <h3>Account Login</h3>
+        <hr>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <label for="email">Username or E-mail*</label>
+          <input type="email" id="email" formControlName="email" placeholder="eg: johndoe@gmail.com" required>
+  
+          <label for="password">Password*</label>
+          <div class="password-container">
+            <input [type]="hide ? 'password' : 'text'" id="password" formControlName="password" placeholder="Enter password" required>
+            <button type="button" (click)="hide = !hide">{{ hide ? 'Show' : 'Hide' }}</button>
+          </div>
+  
+          <button type="submit">Login</button>
+        </form>
+        <a href="#" class="forgot-password">Forgot your password?</a>
+      </div>
+  
+      <div class="new-customers">
+        <h4>New Customers</h4>
+        <hr>
+        <p>Create your personalized BOLD account! You can track your orders, <br>
+            update and share your wishlist, edit billing/shipping info and more.</p>
+        <button type="button" class="create-account">Create Account</button>
+      </div>
+    </div>
+  
+    <div class="benefits">
+      <h6>Why Register With Bold?</h6>
+      <hr>
+      <ul>
+        <li>Faster checkout</li>
+        <li>Exclusive offers</li>
+        <li>Order history and tracking</li>
+        <li>Price Alerts</li>
+      </ul>
+    </div>
+  </div>
+  

@@ -1,0 +1,55 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // padding: 20px;
+  }
+  
+  .header {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .content-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Carousel takes 2/3 of the width, images take 1/3 */
+    grid-template-rows: 1fr 1fr; /* Two rows */
+    gap: 10px; /* Space between the rectangles */
+    width: 1495px; /* Fixed width */
+    // padding: 10px;
+    box-sizing: content-box;
+    height: 400px; /* Fixed height */
+  }
+  
+  .grid-item {
+    border: 1px solid #0e0e0e; /* Thin border around each item */
+    padding: 1px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    grid-row: span 2; /* Span both rows */
+    height: 100%; /* Ensure it takes up full height */
+    width: 100%;
+  }
+  
+  .image-item {
+    height: 100%; /* Ensure images take full height of their grid cell */
+    
+    img {
+      width: 100%;
+      height: 100%; /* Ensure images fill their grid cell */
+      object-fit: cover; /* Ensure images maintain aspect ratio and cover the cell */
+    }
+  }
+  

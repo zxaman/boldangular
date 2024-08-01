@@ -1,0 +1,170 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav class="sidenav" mode="side">
+    <mat-nav-list>
+      <a mat-list-item href="#">Silver</a>
+      <a mat-list-item href="#">Gold</a>
+      <a mat-list-item href="#">Platinum</a>
+      <a mat-list-item href="#">Copper</a>
+      <a mat-list-item href="#">Jewelry</a>
+      <a mat-list-item href="#">Best Seller</a>
+      <a mat-list-item href="#">Collectors</a>
+      <a mat-list-item href="#">Investor's Guide</a>
+      <a mat-list-item href="#">IRA</a>
+      <a mat-list-item href="#">More</a>
+      <a mat-list-item href="#">Deals</a>
+      <a mat-list-item href="#">Sell To Us</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <nav class="header-container mat-elevation-z4">
+      <div class="header-row">
+        <button mat-icon-button (click)="sidenav.toggle()" class="menu-button">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <div class="logo">
+          <button><img src="assets/lion icon.jpg" alt="Logo"></button>
+        </div>
+        <div class="metal-prices">
+          <div class="metal-info">
+            <div class="metal-name">SILVER</div>
+            <div class="price-stock">
+              <div class="price">$27.93</div>
+              <div class="stock-rate">
+                <span class="arrow">▲</span>$0.12
+              </div>
+            </div>
+          </div>
+          <div class="metal-info">
+            <div class="metal-name">GOLD</div>
+            <div class="price-stock">
+              <div class="price">$27.93</div>
+              <div class="stock-rate">
+                <span class="arrow">▲</span>$0.12
+              </div>
+            </div>
+          </div>
+          <div class="metal-info">
+            <div class="metal-name">PLATINUM</div>
+            <div class="price-stock">
+              <div class="price">$27.93</div>
+              <div class="stock-rate">
+                <span class="arrow">▲</span>$0.12
+              </div>
+            </div>
+          </div>
+          <div class="metal-info">
+            <div class="metal-name">PALLADIUM</div>
+            <div class="price-stock">
+              <div class="price">$27.93</div>
+              <div class="stock-rate">
+                <span class="arrow">▲</span>$0.12
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="login-section">
+          
+          <button type="button" routerLink="/login" mat-button>
+            <mat-icon>person</mat-icon>
+            LOGIN
+          </button>
+          <button mat-button>
+            <mat-icon>person_add</mat-icon>
+            REGISTER
+          </button>
+          <div class="support-call">
+            <div class="support">
+              <mat-icon>support_agent</mat-icon>
+              Support
+            </div>
+            <div class="call">
+              <mat-icon>call</mat-icon>
+              <span class="phone-number">1-800-123-4567</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-row2">
+        <div class="shop-button">
+          <button mat-flat-button>Shop In-Stock</button>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search product name here">
+        </div>
+        <div class="shipping-info">
+          <h2>FREE SHIPPING ON DOMESTIC ORDERS - $199 OR MORE</h2>
+          <h3>FULLY INSURED DOMESTIC & INTERNATIONAL ORDERS</h3>
+        </div>
+      </div>
+      <div class="header-row3">
+        <button mat-button [matMenuTriggerFor]="silverMenu">Silver</button>
+        <mat-menu #silverMenu="matMenu">
+          <button mat-menu-item>Option 1</button>
+          <button mat-menu-item>Option 2</button>
+        </mat-menu>
+
+        <button mat-button [matMenuTriggerFor]="goldMenu">Gold</button>
+        <mat-menu #goldMenu="matMenu">
+          <button mat-menu-item>Option 1</button>
+          <button mat-menu-item>Option 2</button>
+        </mat-menu>
+
+        <button mat-button [matMenuTriggerFor]="platinumMenu">Platinum</button>
+        <mat-menu #platinumMenu="matMenu">
+          <button mat-menu-item>Option 1</button>
+          <button mat-menu-item>Option 2</button>
+        </mat-menu>
+
+        <button mat-button [matMenuTriggerFor]="copperMenu">Copper</button>
+        <mat-menu #copperMenu="matMenu">
+          <button mat-menu-item>Option 1</button>
+          <button mat-menu-item>Option 2</button>
+        </mat-menu>
+
+        <button mat-button [matMenuTriggerFor]="jewelryMenu">Jewelry</button>
+        <mat-menu #jewelryMenu="matMenu">
+          <button mat-menu-item>Option 1</button>
+          <button mat-menu-item>Option 2</button>
+        </mat-menu>
+
+        <button mat-button [matMenuTriggerFor]="bestSellerMenu">Best Seller</button>
+        <mat-menu #bestSellerMenu="matMenu">
+          <button mat-menu-item>Option 1</button>
+          <button mat-menu-item>Option 2</button>
+        </mat-menu>
+
+        <button mat-button [matMenuTriggerFor]="collectorsMenu">Collectors</button>
+        <mat-menu #collectorsMenu="matMenu">
+          <button mat-menu-item>Option 1</button>
+          <button mat-menu-item>Option 2</button>
+        </mat-menu>
+
+        <button mat-button [matMenuTriggerFor]="investorsGuideMenu">Investor's Guide</button>
+        <mat-menu #investorsGuideMenu="matMenu">
+          <button mat-menu-item>Option 1</button>
+          <button mat-menu-item>Option 2</button>
+        </mat-menu>
+
+        <button mat-button [matMenuTriggerFor]="iraMenu">IRA</button>
+        <mat-menu #iraMenu="matMenu">
+          <button mat-menu-item>Option 1</button>
+          <button mat-menu-item>Option 2</button>
+        </mat-menu>
+
+        <button mat-button [matMenuTriggerFor]="moreMenu">More</button>
+        <mat-menu #moreMenu="matMenu">
+          <button mat-menu-item>Option 1</button>
+          <button mat-menu-item>Option 2</button>
+        </mat-menu>
+
+        <button mat-button class="deals">Deals</button>
+        <button mat-button class="sell-to-us">Sell To Us</button>
+      </div>
+      <div class="countdown-timer">
+        <app-countdown-timer targetDate="2024-08-01T23:59:59"></app-countdown-timer>
+      </div>
+    </nav>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

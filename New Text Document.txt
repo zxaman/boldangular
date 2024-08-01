@@ -1,0 +1,3 @@
+Install Moment.js or use Date objects for handling time:
+
+npm install moment

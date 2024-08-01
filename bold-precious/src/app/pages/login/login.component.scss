@@ -1,0 +1,131 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  
+    .left-panel{
+        margin-right: -30px;
+    }
+    .right-panel {
+      width: 35%;
+    }
+  
+    .left-panel {
+      h3 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+        
+      }
+  
+      ul {
+        list-style: none;
+        padding: 0;
+  
+        li {
+          margin-bottom: 0.5rem;
+        }
+      }
+  
+      .contact {
+        h4 {
+          margin-top: 1.5rem;
+          font-size: 1.1rem;
+        }
+  
+        p {
+          margin: 0.5rem 0;
+        }
+      }
+    }
+  
+    .right-panel {
+      h3 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+      }
+  
+      form {
+        display: flex;
+        flex-direction: column;
+  
+        label {
+          margin: 0.5rem 0 0.25rem;
+        }
+  
+        input {
+          padding: 0.5rem;
+          margin-bottom: 1rem;
+          border: 1px solid #ccc;
+          border-radius: 0.25rem;
+        }
+  
+        .password-container {
+          position: relative;
+  
+          input {
+            width: calc(100% - 50px);
+          }
+  
+          button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            border: none;
+            background: none;
+            cursor: pointer;
+          }
+        }
+  
+        button[type="submit"] {
+          padding: 0.5rem;
+          background-color: #000;
+          color: #fff;
+          border: none;
+          border-radius: 0.25rem;
+          cursor: pointer;
+        }
+      }
+  
+      .forgot-password {
+        display: block;
+        margin: 1rem 0;
+        color: purple;
+        text-decoration: none;
+      }
+  
+      .new-customers,
+      .benefits {
+        margin-top: 2rem;
+  
+        h4 {
+          font-size: 1.1rem;
+          margin-bottom: 0.5rem;
+        }
+  
+        p,
+        ul {
+          margin: 0.5rem 0;
+        }
+  
+        .create-account {
+          padding: 0.5rem;
+          background-color: #000;
+          color: #fff;
+          border: none;
+          border-radius: 0.25rem;
+          cursor: pointer;
+        }
+  
+        ul {
+          list-style: none;
+          padding: 0;
+  
+          li {
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+  

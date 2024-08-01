@@ -1,0 +1,82 @@
+#cardSlider {
+    .title {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #000000;
+    }
+  
+    .carousel-inner {
+      .carousel-item {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+  
+      .card {
+        margin: 1px;
+        border: 1px solid #79d7a2;
+        border-radius: 8px;
+        overflow: hidden;
+        
+        transition: transform 0.2s ease-in-out;
+        width: calc(100% / 6 - 20px); // Adjust the width to fit 6 cards per slide
+  
+        &:hover {
+          transform: scale(1.05);
+        }
+  
+        .card-img-top {
+          height: 180px;
+          object-fit: contain;
+        }
+  
+        .card-body {
+          padding: 10px;
+  
+          .btn-block {
+            width: 100%;
+            background-color: #5f8ecc;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            transition: background-color 0.2s ease-in-out;
+  
+            &:hover {
+              background-color: #005d35;
+            }
+          }
+        }
+      }
+    }
+  
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 5%;
+      border: none;
+      background: none;
+      outline: none;
+    }
+  
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      display: inline-block;
+      width: 2rem;
+      height: 2rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+    }
+  
+    .carousel-control-prev-icon {
+      mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><path fill="white" d="M4.146 4l3.146-3.146-0.708-0.708-3.146 3.146-3.146-3.146-0.708 0.708 3.146 3.146-3.146 3.146 0.708 0.708 3.146-3.146 3.146 3.146 0.708-0.708-3.146-3.146z"/></svg>') no-repeat center center;
+      -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><path fill="white" d="M4.146 4l3.146-3.146-0.708-0.708-3.146 3.146-3.146-3.146-0.708 0.708 3.146 3.146-3.146 3.146 0.708 0.708 3.146-3.146 3.146 3.146 0.708-0.708-3.146-3.146z"/></svg>') no-repeat center center;
+    }
+  
+    .carousel-control-next-icon {
+      mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><path fill="white" d="M3.854 4l-3.146 3.146 0.708 0.708 3.146-3.146 3.146 3.146 0.708-0.708-3.146-3.146 3.146-3.146-0.708-0.708-3.146 3.146-3.146-3.146-0.708 0.708 3.146 3.146z"/></svg>') no-repeat center center;
+      -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><path fill="white" d="M3.854 4l-3.146 3.146 0.708 0.708 3.146-3.146 3.146 3.146 0.708-0.708-3.146-3.146 3.146-3.146-0.708-0.708-3.146 3.146-3.146-3.146-0.708 0.708 3.146 3.146z"/></svg>') no-repeat center center;
+    }
+  }
+  

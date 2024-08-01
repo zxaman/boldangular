@@ -1,0 +1,12 @@
+<div class="carousel">
+    <div class="carousel-images" [style.transform]="'translateX(-' + currentIndex * 100 + '%)'">
+      <img *ngFor="let image of images" [src]="image" [class.active]="image === images[currentIndex]">
+    </div>
+    <button mat-icon-button class="prev" (click)="prevSlide()">
+      <mat-icon>chevron_left</mat-icon>
+    </button>
+    <button mat-icon-button class="next" (click)="nextSlide()">
+      <mat-icon>chevron_right</mat-icon>
+    </button>
+  </div>
+  
