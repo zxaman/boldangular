@@ -1,8 +1,10 @@
+
 <div class="container">
     <div class="left-panel">
       <h3>Shop Confidently</h3>
       <hr>
       <ul>
+        <button>
         <li>Shipping & Insurance</li>
         <li>Payment Options</li>
         <li>FAQ</li>
@@ -10,11 +12,12 @@
         <li>Privacy Policy</li>
         <li>Terms & Conditions</li>
         <li>Return Policy</li>
+      </button>
       </ul>
       <div class="contact">
         <h4>Have a Question?</h4>
         <p><strong>1(866) 454-BOLD</strong></p>
-        <p>support_boldpreciousmetals.com</p>
+        <p>support&#64;boldpreciousmetals.com</p>
       </div>
     </div>
   
@@ -31,10 +34,11 @@
             <input [type]="hide ? 'password' : 'text'" id="password" formControlName="password" placeholder="Enter password" required>
             <button type="button" (click)="hide = !hide">{{ hide ? 'Show' : 'Hide' }}</button>
           </div>
-  
+          
           <button type="submit">Login</button>
+          <button type = "Back" routerLink="/home"> Back</button>
         </form>
-        <a href="#" class="forgot-password">Forgot your password?</a>
+        <a href="###" class="forgot-password">Forgot your password?</a>
       </div>
   
       <div class="new-customers">
